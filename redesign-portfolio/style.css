@@ -1,0 +1,335 @@
+* {
+    font-family: 'Quicksand';
+    scroll-behavior: smooth;
+    font-weight: 500;
+}
+
+#navbar {
+    top: -60px;
+    /* Hide the navbar 50 px outside of the top view */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+    box-shadow: black 0px 0px 20px;
+}
+
+.forside {
+    background-image: url(/images/test.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-img {
+    width: 100%;
+    padding: 10% 0;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid;
+    transition: 1s;
+}
+
+.linje {
+    border: 1px solid white;
+    width: 300px;
+}
+
+
+/* junjun scroll down arrow */
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: white;
+    fill: transparent;
+    stroke-width: 2px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow
+/*Safari and Chrome*/
+
+{
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
+}
+
+.tekst {
+    font-family: 'Raleway';
+}
+
+.mellemrum {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.brun1 {
+    background-color: #493628;
+}
+
+.brun2 {
+    background-color: #76685E;
+}
+
+.brun3 {
+    background-color: #A39A93;
+}
+
+.brun4 {
+    background-color: #ECEAE9;
+}
+
+.highlight {
+    color: #493628;
+}
+
+.hover {
+    transition: 0.5s;
+}
+
+.hover:hover {
+    background-color: #C8C2BE;
+    transition: 0.5s;
+}
+
+.text-reset {
+    text-decoration: none;
+}
+
+.programmer {
+    height: 50px;
+}
+
+.break1 {
+    background-image: url(/images/break.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.break2 {
+    background-image: url(/images/break2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.break3 {
+    background-image: url(/images/baggrund5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.break1 i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.projekter1 {
+    background-color: #4C5030;
+    height: 500px;
+}
+
+.projekter2 {
+    background-color: #A5A797;
+    height: 500px;
+}
+
+
+/* Flickity */
+
+* {
+    box-sizing: border-box;
+}
+
+.carousel {
+    height: 400px;
+}
+
+.carousel-cell {
+    width: 400px;
+    height: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.carousel-cell img {
+    display: block;
+    max-width: 400px;
+    max-height: 100%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+    transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+    border-right: 5px solid #00000000;
+}
+
+
+/* .carousel-cell.is-selected img:hover {} */
+
+.dot {
+    visibility: hidden;
+}
+
+.carousel-cell.is-selected img {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+}
+
+@media screen and ( min-width: 768px) {
+    .carousel-cell {
+        width: 400px;
+    }
+}
+
+@media screen and ( min-width: 960px) {}
+
+.flickity-prev-next-button {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    opacity: 0.6;
+}
+
+.flickity-prev-next-button:hover {
+    background: transparent;
+    opacity: 1;
+}
+
+.flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+.flickity-prev-next-button.no-svg {
+    color: white;
+}
+
+.flickity-prev-next-button.previous {
+    left: 0;
+    border: 2px solid black;
+}
+
+.flickity-prev-next-button.next {
+    right: 0;
+    border: 2px solid black;
+}
+
+.flickity-prev-next-button:disabled {
+    display: none;
+}
+
+i {
+    font-size: 50px;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@media screen and (min-width: 375px) {
+    .citat2 {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .underoverskrift {
+        padding-top: 5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ommigtekst {
+        padding-top: 200px;
+    }
+    i {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .kompetencer {
+        padding-top: 200px;
+    }
+    .gallery-cell {
+        width: 50%;
+    }
+    .citat1 {
+        visibility: hidden;
+    }
+    .citat2 {
+        visibility: visible;
+    }
+    .nav-item {
+        padding-left: 70px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-item {
+        padding-left: 100px;
+    }
+}

@@ -1,0 +1,88 @@
+* {
+    font-family: 'Quicksand';
+    scroll-behavior: smooth;
+    font-weight: 600;
+}
+
+#navbar {
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+    box-shadow: black 0px 0px 20px;
+}
+
+.mellemrum {
+    margin-top: 100px;
+}
+
+.brun1 {
+    background-color: #493628;
+}
+
+.brun2 {
+    background-color: #76685E;
+}
+
+.brun3 {
+    background-color: #a39a937a;
+}
+
+.brun4 {
+    background-color: #ECEAE9;
+}
+
+#more {
+    display: none;
+}
+
+.download {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.download2 {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.hover {
+    transition: 0.5s;
+}
+
+.hover:hover {
+    background-color: #C8C2BE;
+    transition: 0.5s;
+}
+
+.text-reset {
+    text-decoration: none;
+}
+
+.logoer img {
+    width: 25%;
+    height: 25%;
+}
+
+.item img {
+    object-fit: cover;
+    height: 500px !important;
+}
+
+@media screen and (min-width: 768px) {
+    .ommigtekst {
+        padding-top: 200px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-item {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-item {
+        padding-left: 100px;
+    }
+}
